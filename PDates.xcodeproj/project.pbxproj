@@ -15,6 +15,8 @@
 		B6A629D01E0E3703005D7692 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A629CE1E0E3703005D7692 /* LaunchScreen.storyboard */; };
 		B6A629DB1E0E3703005D7692 /* PDatesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629DA1E0E3703005D7692 /* PDatesTests.swift */; };
 		B6A629E61E0E3703005D7692 /* PDatesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629E51E0E3703005D7692 /* PDatesUITests.swift */; };
+		B6A629F71E0E40F6005D7692 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629F61E0E40F6005D7692 /* DateExtensions.swift */; };
+		B6A629F91E0E43AF005D7692 /* PDateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A629F81E0E43AF005D7692 /* PDateViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,8 @@
 		B6A629E11E0E3703005D7692 /* PDatesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PDatesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A629E51E0E3703005D7692 /* PDatesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PDatesUITests.swift; sourceTree = "<group>"; };
 		B6A629E71E0E3703005D7692 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6A629F61E0E40F6005D7692 /* DateExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		B6A629F81E0E43AF005D7692 /* PDateViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PDateViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,8 +103,10 @@
 		B6A629C11E0E3703005D7692 /* PDates */ = {
 			isa = PBXGroup;
 			children = (
+				B6A629F51E0E40AA005D7692 /* ViewModels */,
+				B6A629F41E0E4059005D7692 /* Views */,
+				B6A629F31E0E4042005D7692 /* Extensions */,
 				B6A629C21E0E3703005D7692 /* AppDelegate.swift */,
-				B6A629C41E0E3703005D7692 /* ViewController.swift */,
 				B6A629C61E0E3703005D7692 /* Main.storyboard */,
 				B6A629CC1E0E3703005D7692 /* Assets.xcassets */,
 				B6A629CE1E0E3703005D7692 /* LaunchScreen.storyboard */,
@@ -126,6 +132,30 @@
 				B6A629E71E0E3703005D7692 /* Info.plist */,
 			);
 			path = PDatesUITests;
+			sourceTree = "<group>";
+		};
+		B6A629F31E0E4042005D7692 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B6A629F61E0E40F6005D7692 /* DateExtensions.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		B6A629F41E0E4059005D7692 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B6A629C41E0E3703005D7692 /* ViewController.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		B6A629F51E0E40AA005D7692 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				B6A629F81E0E43AF005D7692 /* PDateViewModel.swift */,
+			);
+			name = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,7 +296,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6A629C51E0E3703005D7692 /* ViewController.swift in Sources */,
+				B6A629F91E0E43AF005D7692 /* PDateViewModel.swift in Sources */,
 				B6A629CB1E0E3703005D7692 /* PDates.xcdatamodeld in Sources */,
+				B6A629F71E0E40F6005D7692 /* DateExtensions.swift in Sources */,
 				B6A629C31E0E3703005D7692 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
